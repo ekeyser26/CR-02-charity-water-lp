@@ -1,47 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Charity Water Landing Page</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Charity: Water Landing Page</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Hero Section: This is the main banner at the top of the page -->
-    <section class="hero">
-        <!-- Main headline -->
-        <h1>Clean Water for Everyone</h1>
-        <!-- Subheadline -->
-        <p>Join us in bringing safe, clean water to communities in need.</p>
-    </section>
+  <header>
+    <!-- Logo image on the left -->
+    <img src="img/charitywater_logo_horizontal_AllBlack (1).png" alt="Charity Water Logo" class="logo">
+    <!-- Hamburger button on the right -->
+    <button class="hamburger" aria-label="Open menu" onclick="toggleMenu()">
+      <!-- Three lines for the hamburger icon -->
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </button>
+    <!-- Simple dropdown menu, hidden by default -->
+    <nav id="dropdown-menu" class="dropdown-menu">
+      <a href="#">About Us</a>
+      <a href="#">Donate</a>
+      <a href="#">Learn More</a>
+    </nav>
+  </header>
 
-    <!-- Story Section: This tells the story of the nonprofit -->
-    <section class="story">
-        <h2>Our Story</h2>
-        <p>
-         
-    </section>
+  <main>
+    <div class="container">
+      <!-- Left Section -->
+      <div class="left-section">
+        <h2>You’re not just joining a cause, you’re becoming the change you once hoped for.</h2>
+        <p>We bring clean and safe drinking water to people in developing countries. Join us and make a difference!</p>
+        <img src="img/girl and can.jpeg" alt="Water collection image">
+      </div>
 
-    <!-- Real-World Impact Story Section -->
-    <section class="impact-story">
-        <!-- Section headline -->
-        <h2>Real Impact: Meet Amina</h2>
-        <!-- Container for image and text -->
-        <div class="impact-content">
-            <!-- Impact image -->
-            <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=600&q=80" alt="Amina smiling with clean water" class="impact-image">
-            <!-- Impact story text -->
-            <p>
-                Amina used to walk miles every day to collect water for her family. Thanks to your support, her village now has a clean water well. Amina can go to school and her family is healthier and happier.
-            </p>
-        </div>
-    </section>
+      <!-- Right Section -->
+      <div class="right-section">
+        <img src="img/daughter.jpeg" alt="Woman carrying water jug">
+        <a href="#" class="cta-button">Fuel a Future →</a>
+        <img src="img/babyy.jpeg"Smiling women>
+      </div>
+    </div>
 
-    <!-- Call-to-Action Section: This encourages visitors to take action -->
-    <section class="call-to-action">
-        <h2>Make a Difference</h2>
-        <p>Your support can help save lives. Every donation brings us closer to a world with clean water for all.</p>
-        <a href="#" class="donate-button">Donate Now</a>
-    </section>
+    <!-- Removed the phone mockup image section below -->
+    <!--
+    <div class="phone-mockup">
+      <img src="img/charitywater_logo_horizontal_AllBlack (1).png" alt="Phone mockup with charity water feed">
+    </div>
+    -->
+  </main>
+
+  <!-- Add this script just before the closing </body> tag -->
+  <script>
+    // This function shows or hides the menu when the hamburger is clicked
+    function toggleMenu() {
+      var menu = document.getElementById('dropdown-menu');
+      // Toggle the "show" class on the menu
+      menu.classList.toggle('show');
+    }
+  </script>
+
+  <!-- Add this footer just before the closing </body> tag -->
+  <footer>
+    <!-- Simple footer with social media links -->
+    <p>Connect with us:</p>
+    <!-- Social media links open in a new tab -->
+    <a href="https://facebook.com" target="_blank">Facebook</a> |
+    <a href="https://tiktok.com" target="_blank">TikTok</a> |
+    <a href="https://instagram.com" target="_blank">Instagram</a>
+  </footer>
 </body>
 </html>
